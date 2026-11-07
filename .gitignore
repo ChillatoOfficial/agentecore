@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+keys.txt
+*.db
+*.db-wal
+*.db-shm
+.claude/
+.idea/
+.vscode/
+dist/
+build/
+*.egg-info/

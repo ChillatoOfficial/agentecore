@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentecore"
+dynamic = ["version"]
+description = "Framework Python per agenti e chatbot LLM con OpenAI, Anthropic e Gemini"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["llm", "agent", "chatbot", "openai", "anthropic", "gemini", "tools"]
+dependencies = [
+    "httpx>=0.28,<1",
+    "pydantic>=2.5,<3",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+dev = ["build", "twine"]
+
+[tool.setuptools.dynamic]
+version = { attr = "agentecore.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["agentecore*"]
+
+[tool.setuptools.package-data]
+agentecore = ["py.typed"]
