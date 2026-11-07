@@ -285,7 +285,7 @@ Per un trasporto diverso da HTTP estendi direttamente `Client` e implementa `_in
 Segnalazioni e pull request sono benvenute. Per preparare l'ambiente:
 
 ```bash
-git clone https://github.com/<utente>/agentecore.git
+git clone https://github.com/ChillatoOfficial/agentecore.git
 cd agentecore
 python -m venv .venv
 .venv\Scripts\activate          # Windows
